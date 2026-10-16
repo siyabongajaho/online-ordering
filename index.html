@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Goldfields Farm Fresh | Chicken, eggs and pork in Welkom</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--bg:#f6f4ec;--surf:#fffdf8;--ink:#16241c;--mut:#5d6b61;--line:#dcdccf;--acc:#1f4d3a;--acc-ink:#fff;--yolk:#e9a912;--tint:#e9eee3;
+--serif:"Cormorant Garamond",Georgia,serif;--sans:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#0e1913;--surf:#15241c;--ink:#edf1e8;--mut:#9bab9f;--line:#25382d;--acc:#f0b429;--acc-ink:#1a1405;--yolk:#f0b429;--tint:#1b2d23}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#0e1913;--surf:#15241c;--ink:#edf1e8;--mut:#9bab9f;--line:#25382d;--acc:#f0b429;--acc-ink:#1a1405;--yolk:#f0b429;--tint:#1b2d23}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 76px)}
+*,*::before,*::after{box-sizing:inherit}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1080px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.05;margin:0}
+.hd{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.hdin{display:flex;align-items:center;gap:20px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font:700 1.35rem/1 var(--serif);text-decoration:none;margin-right:auto}
+.mark{width:18px;height:23px;border-radius:50% 50% 50% 50%/62% 62% 38% 38%;background:var(--yolk)}
+.hd nav{display:flex;gap:22px;font-weight:500;font-size:.95rem}
+.hd nav a{text-decoration:none;color:var(--mut)}.hd nav a:hover{color:var(--ink)}
+.ib,.cartb{display:inline-flex;align-items:center;gap:8px;height:40px;border:1px solid var(--line);background:var(--surf);color:var(--ink);border-radius:999px;font:600 .9rem var(--sans);padding:0 14px;cursor:pointer;text-decoration:none}
+.ib{width:40px;padding:0;justify-content:center}
+.cartb b{background:var(--acc);color:var(--acc-ink);min-width:22px;height:22px;border-radius:11px;display:grid;place-items:center;font-size:.78rem}
+.hero{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center;padding:72px 0 56px}
+.hero h1{font-size:clamp(2.6rem,6.4vw,4.8rem);letter-spacing:-.01em;max-width:11em}
+.hero p{color:var(--mut);font-size:1.08rem;max-width:34em;margin:22px 0 28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 24px;border-radius:999px;border:1px solid var(--acc);background:var(--acc);color:var(--acc-ink);font:600 .98rem var(--sans);text-decoration:none;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn.wa{background:#1fa855;border-color:#1fa855;color:#fff}
+.egg{width:min(250px,62vw);aspect-ratio:3/4;justify-self:center;border-radius:50% 50% 50% 50%/62% 62% 38% 38%;background:var(--tint);border:1px solid var(--line);display:grid;place-items:center}
+.egg i{width:48%;aspect-ratio:1;border-radius:50%;background:var(--yolk);box-shadow:0 14px 44px rgba(233,169,18,.4)}
+section.blk{padding:56px 0}
+.sh{font-size:clamp(2rem,4.5vw,3rem);margin-bottom:6px}
+.sub{color:var(--mut);margin:0 0 28px}
+.menu{max-width:820px}
+.menu h2{font-size:1.9rem;margin:34px 0 4px;padding-bottom:10px;border-bottom:2px solid var(--ink)}
+.row{display:grid;grid-template-columns:52px 1fr auto auto;gap:6px 18px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line)}
+.ic{width:52px;height:52px;border-radius:50%;background:var(--tint);display:grid;place-items:center;font-size:1.5rem}
+.row h3{font-size:1.4rem}.row p{margin:2px 0 0;color:var(--mut);font-size:.9rem;line-height:1.4}
+.pr{font-weight:700;text-align:right;font-variant-numeric:tabular-nums}.pr small{display:block;font-weight:500;color:var(--mut);font-size:.78rem}
+.st{display:flex;align-items:center;gap:4px;border:1px solid var(--line);border-radius:999px;background:var(--surf);padding:3px}
+.st button{width:34px;height:34px;border-radius:50%;border:0;background:transparent;color:var(--ink);font:600 1.2rem var(--sans);cursor:pointer}
+.st button:hover{background:var(--tint)}.st span{min-width:24px;text-align:center;font-weight:700;font-variant-numeric:tabular-nums}
+.ogrid{display:grid;grid-template-columns:1.25fr 1fr;gap:32px;align-items:start}
+.card{background:var(--surf);border:1px solid var(--line);border-radius:18px;padding:26px}
+.sum{position:sticky;top:calc(env(safe-area-inset-top,0px) + 84px)}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:6px;background:var(--tint);padding:5px;border-radius:999px;margin-bottom:22px}
+.seg button{height:44px;border:0;border-radius:999px;background:transparent;color:var(--mut);font:600 .95rem var(--sans);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--acc);color:var(--acc-ink)}
+label{display:block;font-weight:600;font-size:.88rem;margin:0 0 6px}
+.f{margin-bottom:16px}
+input,select,textarea{width:100%;min-height:46px;padding:11px 14px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);font:400 1rem var(--sans)}
+textarea{min-height:76px;resize:vertical}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.hint{font-size:.85rem;color:var(--mut);margin:8px 0 0}
+.lb{background:transparent;border:1px dashed var(--mut);color:var(--ink);min-height:42px;border-radius:12px;padding:0 14px;font:600 .9rem var(--sans);cursor:pointer}
+.sum h3{font-size:1.7rem;margin-bottom:14px}
+ul.sl{list-style:none;margin:0 0 14px;padding:0}
+.sl li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:.95rem}
+.sl .emp{color:var(--mut);border:0}
+.tl{display:flex;justify-content:space-between;padding:4px 0;font-variant-numeric:tabular-nums;color:var(--mut)}
+.tl.g{color:var(--ink);font:700 1.25rem var(--sans);border-top:1px solid var(--ink);margin-top:8px;padding-top:12px}
+.err{color:#c0392b;font-weight:600;font-size:.9rem;min-height:1.4em;margin:12px 0 4px}
+.sum .btn{width:100%}
+footer{border-top:1px solid var(--line);padding:32px 0 96px;color:var(--mut);font-size:.9rem}
+.bar{display:none;position:fixed;left:12px;right:12px;bottom:calc(env(safe-area-inset-bottom,0px) + 12px);z-index:25;justify-content:space-between;align-items:center;background:var(--acc);color:var(--acc-ink);border-radius:999px;padding:14px 22px;text-decoration:none;font-weight:600;box-shadow:0 10px 30px rgba(0,0,0,.28)}
+.rw{position:fixed;inset:0;z-index:50;background:rgba(8,14,10,.7);overflow-y:auto;padding:calc(env(safe-area-inset-top,0px) + 18px) 14px calc(env(safe-area-inset-bottom,0px) + 18px)}
+.rc{max-width:460px;margin:0 auto}
+.paper{background:#fffef9;color:#1c1c18;border-radius:6px;padding:28px 24px;font-size:.92rem;position:relative}
+.paper::after{content:"";position:absolute;left:0;right:0;bottom:-8px;height:8px;background:conic-gradient(from -45deg at bottom,transparent 90deg,#fffef9 0) 0 0/16px 8px}
+.paper h2{font-size:1.9rem;text-align:center}.paper .c{text-align:center;color:#6d6d62;margin:2px 0 0;font-size:.85rem}
+.paper hr{border:0;border-top:1px dashed #b8b8a8;margin:16px 0}
+.kv{display:flex;justify-content:space-between;gap:16px;padding:2px 0}.kv span:first-child{color:#6d6d62}.kv span:last-child{text-align:right}
+.paper table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}.paper td{padding:3px 0;vertical-align:top}.paper td:last-child{text-align:right;white-space:nowrap}
+.paper .tt{font:700 1.15rem var(--sans)}.paper .note{font-size:.8rem;color:#6d6d62;text-align:center;margin:0}
+.acts2{display:grid;gap:10px;margin-top:26px}
+.acts2 .btn.ghost{background:var(--surf)}
+@media (max-width:860px){.hero,.ogrid{grid-template-columns:1fr}.hero{padding-top:44px}.egg{order:-1;width:130px}.sum{position:static}.hd nav{display:none}.bar{display:flex}}
+@media (max-width:560px){.row{grid-template-columns:48px 1fr auto}.ic{width:48px;height:48px}.pr{grid-column:2;grid-row:2;text-align:left}.pr small{display:inline;margin-left:4px}.st{grid-column:3;grid-row:1/3}.two{grid-template-columns:1fr}.card{padding:20px}}
+@media print{body>*:not(.rw){display:none!important}.rw{position:static;background:none;padding:0}.acts2{display:none}.paper{border-radius:0}.paper::after{display:none}}
+</style>
+</head>
+<body>
+<header class="hd"><div class="wrap hdin">
+<a class="brand" href="#top"><span class="mark"></span>Goldfields Farm Fresh</a>
+<nav><a href="#menu">Menu</a><a href="#order">Order</a></nav>
+<button class="ib" id="th" aria-label="Switch between light and dark theme"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"/></svg></button>
+<a class="cartb" href="#order">Order <b id="cn">0</b></a>
+</div></header>
+
+<main>
+<section class="hero wrap" id="top">
+<div>
+<h1>Chicken, eggs and pork for your table.</h1>
+<p>Serving Welkom and the surrounding towns. Choose what you need, pick delivery or collection, and your order goes straight to us on WhatsApp.</p>
+<div class="cta"><a class="btn" href="#menu">See the menu</a><a class="btn ghost" href="#order">Place an order</a></div>
+</div>
+<div class="egg" aria-hidden="true"><i></i></div>
+</section>
+
+<section class="blk wrap" id="menu">
+<h2 class="sh">The menu</h2>
+<p class="sub">Tap + to add to your order. Pork is sold per kilogram.</p>
+<div class="menu" id="list"></div>
+</section>
+
+<section class="blk wrap" id="order">
+<h2 class="sh">Your order</h2>
+<p class="sub">Tell us where to bring it, or choose collection. You'll get a receipt before anything is sent.</p>
+<div class="ogrid">
+<div class="card">
+<div class="seg" role="group" aria-label="Delivery or collection">
+<button type="button" data-m="delivery" aria-pressed="true">Delivery</button>
+<button type="button" data-m="pickup" aria-pressed="false">Collection</button>
+</div>
+<div class="two">
+<div class="f"><label for="nm">Your name</label><input id="nm" autocomplete="name"></div>
+<div class="f"><label for="ph">Phone number</label><input id="ph" type="tel" inputmode="tel" autocomplete="tel" placeholder="078 000 0000"></div>
+</div>
+<div id="dl">
+<div class="f"><label for="tn">Town</label><select id="tn"><option value="">Choose your town</option></select></div>
+<div class="f"><label for="ad">Street address and suburb</label><input id="ad" autocomplete="street-address" placeholder="e.g. 12 Jan Hofmeyr Rd, Doorn"></div>
+<div class="f"><label for="lm">Landmark or directions (optional)</label><input id="lm" placeholder="e.g. blue gate, next to the school"></div>
+<div class="f"><button type="button" class="lb" id="loc">Share my current location</button><p class="hint" id="locm">Optional. Helps the driver find you.</p></div>
+</div>
+<p class="hint" id="pk" hidden style="margin:0 0 16px">The collection point and time will be confirmed with you on WhatsApp.</p>
+<div class="two">
+<div class="f"><label for="wh">Preferred day and time</label><input id="wh" placeholder="e.g. Saturday morning"></div>
+<div class="f"><label for="py">Payment</label><select id="py"><option>Cash</option><option>EFT</option></select></div>
+</div>
+<div class="f" style="margin:0"><label for="nt">Notes (optional)</label><textarea id="nt" placeholder="Anything we should know?"></textarea></div>
+</div>
+
+<aside class="card sum" aria-live="polite">
+<h3>Summary</h3>
+<ul class="sl" id="sl"></ul>
+<div class="tl"><span>Subtotal</span><span id="sub"></span></div>
+<div class="tl"><span>Delivery</span><span id="fee"></span></div>
+<div class="tl g"><span>Total</span><span id="tot"></span></div>
+<p class="err" id="err" role="alert"></p>
+<button class="btn" id="rv" type="button">Review my receipt</button>
+</aside>
+</div>
+</section>
+</main>
+
+<footer><div class="wrap">Goldfields Farm Fresh, Welkom and surrounding towns. Orders are confirmed on WhatsApp: <a href="https://wa.me/27787473619">+27 78 747 3619</a></div></footer>
+
+<a class="bar" id="bar" href="#order" hidden><span id="barx"></span><b>View order</b></a>
+
+<div class="rw" id="rw" hidden role="dialog" aria-modal="true" aria-label="Order receipt"><div class="rc" id="rc"></div></div>
+
+<script>
+const PHONE="27787473619",FEE=40,BIZ="Goldfields Farm Fresh";
+const TOWNS=["Welkom","Riebeeckstad","Bedelia","Virginia","Odendaalsrus","Hennenman","Allanridge","Theunissen","Ventersburg","Other nearby town"];
+const P=[
+{id:"chk",c:"Chicken",n:"Whole chicken",d:"Cleaned and ready for the oven, braai or pot.",u:"each",p:95,i:"🐔"},
+{id:"ch2",c:"Chicken",n:"Chicken family pack",d:"Two whole chickens at a better price.",u:"pack of 2",p:180,i:"🍗"},
+{id:"eg1",c:"Eggs",n:"Eggs, full tray",d:"30 eggs.",u:"tray",p:75,i:"🥚"},
+{id:"eg2",c:"Eggs",n:"Eggs, half tray",d:"15 eggs.",u:"half tray",p:40,i:"🥚"},
+{id:"pc",c:"Pork",n:"Pork chops",d:"Thick cut, ideal for the braai.",u:"per kg",p:115,i:"🥩"},
+{id:"pr",c:"Pork",n:"Pork ribs",d:"Meaty ribs for slow cooking.",u:"per kg",p:120,i:"🍖"},
+{id:"pb",c:"Pork",n:"Pork belly",d:"Rich and tender, great roasted.",u:"per kg",p:125,i:"🥓"}
+];
+const $=s=>document.querySelector(s),R=n=>"R"+n.toFixed(2),esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const cart={};let mode="delivery",pin="",lastMsg="";
+
+$("#list").innerHTML=["Chicken","Eggs","Pork"].map(c=>`<h2>${c}</h2>`+P.filter(p=>p.c===c).map(p=>`<div class="row"><div class="ic" aria-hidden="true">${p.i}</div><div><h3>${p.n}</h3><p>${p.d}</p></div><div class="pr">${R(p.p)}<small>${p.u}</small></div><div class="st"><button type="button" data-a="-1" data-id="${p.id}" aria-label="Remove one ${p.n}">−</button><span id="q-${p.id}">0</span><button type="button" data-a="1" data-id="${p.id}" aria-label="Add one ${p.n}">+</button></div></div>`).join("")).join("");
+$("#tn").insertAdjacentHTML("beforeend",TOWNS.map(t=>`<option>${t}</option>`).join(""));
+
+function tot(){let n=0,s=0;P.forEach(p=>{const q=cart[p.id]||0;n+=q;s+=q*p.p});const f=mode==="delivery"&&s?FEE:0;return{n,s,f,t:s+f}}
+function upd(){const T=tot();
+P.forEach(p=>$("#q-"+p.id).textContent=cart[p.id]||0);
+$("#cn").textContent=T.n;
+$("#sl").innerHTML=T.n?P.filter(p=>cart[p.id]).map(p=>`<li><span>${cart[p.id]} × ${p.n}</span><span>${R(cart[p.id]*p.p)}</span></li>`).join(""):'<li class="emp">Nothing added yet. Pick items from the menu.</li>';
+$("#sub").textContent=R(T.s);
+$("#fee").textContent=mode==="delivery"?R(T.f):"Free (collection)";
+$("#tot").textContent=R(T.t);
+$("#bar").hidden=!T.n;$("#barx").textContent=`${T.n} item${T.n>1?"s":""}, ${R(T.t)}`}
+
+document.addEventListener("click",e=>{const b=e.target.closest("[data-a]");if(b){const id=b.dataset.id;cart[id]=Math.max(0,(cart[id]||0)+ +b.dataset.a);$("#err").textContent="";upd()}
+const m=e.target.closest("[data-m]");if(m){mode=m.dataset.m;document.querySelectorAll("[data-m]").forEach(x=>x.setAttribute("aria-pressed",x===m));$("#dl").hidden=mode!=="delivery";$("#pk").hidden=mode==="delivery";upd()}});
+
+const root=document.documentElement;
+try{const s=localStorage.getItem("th");if(s)root.dataset.theme=s}catch(e){}
+$("#th").onclick=()=>{const d=root.dataset.theme?root.dataset.theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;const n=d?"light":"dark";root.dataset.theme=n;try{localStorage.setItem("th",n)}catch(e){}};
+
+$("#loc").onclick=()=>{const m=$("#locm");
+if(!navigator.geolocation){m.textContent="Location isn't available on this device. Please type your address.";return}
+m.textContent="Finding your location…";
+try{navigator.geolocation.getCurrentPosition(p=>{pin=`https://maps.google.com/?q=${p.coords.latitude.toFixed(6)},${p.coords.longitude.toFixed(6)}`;m.textContent="Location saved. It will be included with your order."},()=>{pin="";m.textContent="Couldn't get your location. Please type your address instead."},{timeout:10000})}catch(e){m.textContent="Couldn't get your location. Please type your address instead."}};
+
+function review(){
+const T=tot(),v=id=>$(id).value.trim(),del=mode==="delivery";
+const err=!T.n?"Add at least one item from the menu.":!v("#nm")?"Enter your name.":!/^[+0-9 ()-]{9,}$/.test(v("#ph"))?"Enter a phone number we can reach you on.":del&&(!$("#tn").value||!v("#ad"))?"Choose your town and enter your delivery address.":"";
+$("#err").textContent=err;if(err)return;
+const ref="GF-"+Date.now().toString(36).toUpperCase().slice(-6),date=new Date().toLocaleString("en-ZA",{dateStyle:"medium",timeStyle:"short"});
+const items=P.filter(p=>cart[p.id]),addr=del?[v("#ad"),$("#tn").value].join(", "):"";
+const L=[`*New order: ${BIZ}*`,`Ref: ${ref}`,`Date: ${date}`,"",...items.map(p=>`${cart[p.id]} x ${p.n} (${p.u}): ${R(cart[p.id]*p.p)}`),"",`Subtotal: ${R(T.s)}`];
+if(del)L.push(`Delivery: ${R(T.f)}`);
+L.push(`*Total: ${R(T.t)}*`,"",`Method: ${del?"Delivery":"Collection"}`,`Name: ${v("#nm")}`,`Phone: ${v("#ph")}`);
+if(del){L.push(`Address: ${addr}`);if(v("#lm"))L.push(`Landmark: ${v("#lm")}`);if(pin)L.push(`Map pin: ${pin}`)}
+if(v("#wh"))L.push(`When: ${v("#wh")}`);
+L.push(`Payment: ${$("#py").value}`);if(v("#nt"))L.push(`Notes: ${v("#nt")}`);
+lastMsg=L.join("\n");
+const kv=(k,x)=>x?`<div class="kv"><span>${k}</span><span>${esc(x)}</span></div>`:"";
+$("#rc").innerHTML=`<div class="paper"><h2>${BIZ}</h2><p class="c">Order receipt</p><hr>
+${kv("Reference",ref)}${kv("Date",date)}<hr>
+${kv("Name",v("#nm"))}${kv("Phone",v("#ph"))}${kv("Method",del?"Delivery":"Collection")}${kv("Address",addr)}${kv("Landmark",v("#lm"))}${pin?kv("Map pin","Included"):""}${kv("Preferred time",v("#wh"))}${kv("Payment",$("#py").value)}${kv("Notes",v("#nt"))}<hr>
+<table>${items.map(p=>`<tr><td>${cart[p.id]} × ${p.n}<br><small style="color:#6d6d62">${R(p.p)} ${p.u}</small></td><td>${R(cart[p.id]*p.p)}</td></tr>`).join("")}</table><hr>
+<table><tr><td>Subtotal</td><td>${R(T.s)}</td></tr>${del?`<tr><td>Delivery</td><td>${R(T.f)}</td></tr>`:""}<tr class="tt"><td>Total</td><td>${R(T.t)}</td></tr></table><hr>
+<p class="note">Your order is confirmed once we reply on WhatsApp. Thank you for supporting local.</p></div>
+<div class="acts2"><a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/${PHONE}?text=${encodeURIComponent(lastMsg)}">Send order on WhatsApp</a>
+<button class="btn ghost" type="button" id="cp">Copy receipt</button><button class="btn ghost" type="button" id="pt">Print or save as PDF</button><button class="btn ghost" type="button" id="ed">Edit my order</button></div>`;
+$("#rw").hidden=false;document.body.style.overflow="hidden";$("#rw").scrollTop=0;
+$("#ed").onclick=closeR;
+$("#pt").onclick=()=>{try{window.print()}catch(e){}};
+$("#cp").onclick=async()=>{try{await navigator.clipboard.writeText(lastMsg);$("#cp").textContent="Copied"}catch(e){$("#cp").textContent="Copy not available here"}};
+}
+function closeR(){$("#rw").hidden=true;document.body.style.overflow=""}
+$("#rv").onclick=review;
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!$("#rw").hidden)closeR()});
+upd();
+</script>
+</body>
+</html>
